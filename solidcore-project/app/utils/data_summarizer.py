@@ -6,11 +6,14 @@ import altair as alt
 
 def display_executive_summary(df: pd.DataFrame):
     st.title("Executive Summary 📊")
-    st.markdown("By looking at sales over time for the 45 stores in the file, we can see: " \
-    "- We have fairly steady weekly sales, aside from spikes around Black Friday and Christmas. " \
-    "- The majority of our stores are Type A, and our top performers by total sales are of Type A. The majority of our bottom performing stores are of Type C. We could further investigate here to normalize for sales by square foot." \
-    "While our sales performance is strong, as a big box retailer we could be leaning more into Memorial and Labor Day, which are also popular shopping holidays by running promotions to improve traffic during these times. To increase sales, we should further examine store performance by type to evaluate which types are underperforming.")
+    st.markdown("""
+    By looking at sales over time for the 45 stores in the file, we can see:
 
+    - We have fairly steady weekly sales, aside from spikes around Black Friday and Christmas.
+    - The majority of our stores are Type A, and our top performers by total sales are of Type A. The majority of our bottom performing stores are of Type C. We could further investigate here to normalize for sales by square foot.
+
+    While our sales performance is strong, as a big box retailer we could be leaning more into Memorial and Labor Day, which are also popular shopping holidays by running promotions to improve traffic during these times. To increase sales, we should further examine store performance by type to evaluate which types are underperforming.
+    """)
     if df.empty:
         st.warning("No data available for the selected filters. Please adjust the filters in the sidebar.")
         return
