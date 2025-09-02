@@ -24,7 +24,7 @@ theming.altair_theme()
 # --- Page Header ---
 st.title("🛒 Big Box Retail Analysis & Exploration")
 st.markdown("""
-This dashboard provides insights into Big Box Sales performance based on the data provided. 
+This dashboard provides insights into Big Box Sales performance to help us uncover insights that could lead to enhanced sales performance and store optimization. We'll start by looking at high level performance, understanding seasonal trends, and identifying a forecasting model that will help us understand how we're performing against actuals. Last, we'll segment stores, identifying top performers that can indicate how we should be optimizing our operations, and bottom performers that should be either improved or closed.
 Use the global filters on the left to slice the data by date, store type, or individual stores. 
 The analysis will dynamically update across all pages.
 """)
